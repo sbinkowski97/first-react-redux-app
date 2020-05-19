@@ -6,7 +6,7 @@
     },
     {
       "id": "2",
-      "name": "Bills and Utilities"
+      "name": "Bills and utilities"
     },
     {
       "id": "4",
@@ -14,49 +14,49 @@
     },
     {
       "id": "5",
-      "name": "Entertaiment"
+      "name": "Entertainment"
     }
   ],
   "categories": [
     {
       "id": "1",
       "name": "Internet",
-      "parentCategory": "2"
+      "parentCategoryId": "2"
     },
     {
       "id": "2",
-      "name": "Mobile Phone",
-      "parentCategory": "2"
+      "name": "Mobile phone",
+      "parentCategoryId": "2"
     },
     {
       "id": "3",
       "name": "Rent",
-      "parentCategory": "2"
+      "parentCategoryId": "2"
     },
     {
       "id": "4",
       "name": "Alcohol",
-      "parentCategory": "1"
+      "parentCategoryId": "1"
     },
     {
       "id": "5",
       "name": "Grocery",
-      "parentCategory": "1"
+      "parentCategoryId": "1"
     },
     {
       "id": "6",
       "name": "Chemistry",
-      "parentCategory": "1"
+      "parentCategoryId": "1"
     },
     {
       "id": "7",
-      "name": "Udemy Course",
-      "parentCategory": "4"
+      "name": "Udemy course",
+      "parentCategoryId": "4"
     },
     {
       "id": "8",
       "name": "Restaurants and pubs",
-      "parentCategory": "5"
+      "parentCategoryId": "5"
     }
   ],
   "budgetCategories": [
@@ -123,7 +123,7 @@
     },
     {
       "id": "3",
-      "description": "Weekly shopping",
+      "description": "Weekly shoping",
       "amount": 23.88,
       "categoryId": "6",
       "date": "2019-12-17T15:41:01.768Z",
@@ -131,7 +131,7 @@
     },
     {
       "id": "4",
-      "description": "Weekly Shopping #2",
+      "description": "Weekly shoping #2",
       "amount": 12.48,
       "categoryId": "6",
       "date": "2019-12-17T12:41:01.768Z",
@@ -139,19 +139,91 @@
     },
     {
       "id": "5",
-      "description": "Dinner in restaurant",
+      "description": "Dinner in a restaurant",
       "amount": 35.68,
       "categoryId": "null",
+      "date": "2019-12-22T15:33:11.768Z",
+      "budgetId": "1"
+    },
+    {
+      "id": "5",
+      "description": "Grocery shopping #1",
+      "amount": 12.38,
+      "categoryId": "5",
       "date": "2019-12-18T13:38:41.768Z",
       "budgetId": "1"
     },
     {
       "description": "Default Agile Workflow",
       "amount": 123,
-      "categoryId": "2",
+      "categoryId": "7",
       "date": "2020-02-13",
       "budgetId": "1",
       "id": "p1tYW2Q"
+    },
+    {
+      "description": "Nowa transakcja",
+      "amount": 10.5,
+      "categoryId": "3",
+      "date": "2020-02-19",
+      "budgetId": "1",
+      "id": "aqq7G-0"
+    },
+    {
+      "description": "Nowa transakcja1",
+      "amount": 10.5,
+      "categoryId": "3",
+      "date": "2020-02-19",
+      "budgetId": "1",
+      "id": "GNERO_K"
+    },
+    {
+      "description": "Nowa transakcja2",
+      "amount": 10.5,
+      "categoryId": "3",
+      "date": "2020-02-19",
+      "budgetId": "1",
+      "id": "M9B9puJ"
+    },
+    {
+      "description": "Nowa transakcja3",
+      "amount": 10.5,
+      "categoryId": "3",
+      "date": "2020-02-19",
+      "budgetId": "1",
+      "id": "gsP5R-B"
+    },
+    {
+      "description": "Nowa transakcja5",
+      "amount": 10.5,
+      "categoryId": "2",
+      "date": "2020-02-19",
+      "budgetId": "1",
+      "id": "EXvZu7Z"
+    },
+    {
+      "description": "Nowa transakcja5",
+      "amount": 10.5,
+      "categoryId": "3",
+      "date": "2020-02-20",
+      "budgetId": "1",
+      "id": "nd_u-b5"
+    },
+    {
+      "description": "Nowa transakcja6",
+      "amount": 10.5,
+      "categoryId": "3",
+      "date": "2020-02-20",
+      "budgetId": "1",
+      "id": "KBQrPmU"
+    },
+    {
+      "description": "Nowa transakcja7",
+      "amount": 10.6,
+      "categoryId": "3",
+      "date": "2020-02-20",
+      "budgetId": "1",
+      "id": "jHBfyjy"
     }
   ]
 }
