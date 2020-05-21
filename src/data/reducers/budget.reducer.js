@@ -7,6 +7,9 @@ import {
   BUDGETED_CATEGORIES_GET_SUCCESS,
   BUDGETED_CATEGORIES_GET_FAILURE,
   SET_SELECTED_PARENT_CATEGORY_ID,
+  BUDGET_TRANSACTION_ADD_REQUEST,
+  BUDGET_TRANSACTION_ADD_SUCCESS,
+  BUDGET_TRANSACTION_ADD_FAILURE,
 } from "data/constants";
 
 const initialState = {
@@ -75,6 +78,24 @@ function budget(state = initialState, action) {
       return {
         ...state,
         selectedParentCategoryId: action.payload,
+      };
+    case BUDGET_TRANSACTION_ADD_SUCCESS:
+      delete newLoadingState.BUDGET_GET_REQUEST;
+
+      return {
+        ...state,
+        loadingState: newLoadingState,
+        budget: {
+          ...state.budget,
+          transactions: [action.payload, ...state.budget.transactions],
+        },
+      };
+    case BUDGET_TRANSACTION_ADD_FAILURE:
+      delete newLoadingState.BUDGET_GET_REQUEST;
+
+      return {
+        ...state,
+        loadingState: newLoadingState,
       };
     default:
       return state;

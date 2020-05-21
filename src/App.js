@@ -6,10 +6,11 @@ import GlobalStyles from "./index.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import BudgetPage from "pages/Budget";
-
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+toast.configure();
 function App() {
   const { i18n } = useTranslation();
-
   return (
     <Fragment>
       <GlobalStyles />
