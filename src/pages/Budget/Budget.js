@@ -10,6 +10,7 @@ import common from "data/reducers/common.reducer";
 import { useMemo } from "react";
 import { LoadingIndicator } from "components";
 import BudgetCategoryList from "pages/Budget/components/BudgetCategoryList";
+import BudgetTransactionList from "pages/Budget/components/BudgetTransactionList";
 function Budget({
   commonState,
   budgetState,
@@ -34,14 +35,10 @@ function Budget({
   return (
     <Grid>
       <section>
-        {isLoaded ? (
-          <BudgetCategoryList></BudgetCategoryList>
-        ) : (
-          <LoadingIndicator></LoadingIndicator>
-        )}
+        {isLoaded ? <BudgetCategoryList /> : <LoadingIndicator />}
       </section>
       <section>
-        {isLoaded ? "transactionList" : <LoadingIndicator></LoadingIndicator>}
+        {isLoaded ? <BudgetTransactionList /> : <LoadingIndicator />}
       </section>
     </Grid>
   );
