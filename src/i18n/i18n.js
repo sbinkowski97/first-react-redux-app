@@ -4,8 +4,8 @@ import LanguageDetector from "i18next-browser-languagedetector";
 
 import CustomBackend from "./CustomBackend";
 
-const token = "17d4023a1e67ceb34d4cd56b464cee03";
-const id = "338213";
+const token = process.env.REACT_APP_POEDITOR_KEY;
+const id = process.env.REACT_APP_API_PROJECT;
 
 i18n
   .use(CustomBackend)

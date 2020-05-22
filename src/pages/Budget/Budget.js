@@ -14,7 +14,7 @@ import { LoadingIndicator, Modal, Button } from "components";
 import BudgetCategoryList from "pages/Budget/components/BudgetCategoryList";
 import BudgetTransactionList from "pages/Budget/components/BudgetTransactionList";
 import AddTransactionForm from "pages/Budget/components/AddTransactionForm";
-function Budget({
+const Budget = ({
   budget,
   commonState,
   budgetState,
@@ -23,7 +23,7 @@ function Budget({
   fetchAllCategories,
   allCategories,
   addTransaction,
-}) {
+}) => {
   useEffect(() => {
     fetchBudget(1);
     fetchBudgetCategories(1);
@@ -75,7 +75,7 @@ function Budget({
       </Switch>
     </>
   );
-}
+};
 
 export default connect(
   (state) => {
